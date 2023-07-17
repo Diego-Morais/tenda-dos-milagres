@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+    
+        *{
+          margin: 0 auto;
+          background-color:black;
+        
+        }
+        
+    h1{ 
+        top: 40px;
+        color:white;
+        background-color:sienna;
+    }
+
+    .livro img{
+     margin-top: 30px;
+     
+     background-color: wheat;
+     border: solid 3px wheat;
+     
+    
+
+
+    }
+    
+    .op1{
+        display: flex;
+        display: none;
+        border:solid 3px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        width: 800px;
+        
+       }
+
+       .op2{
+        position: relative;
+        display: flex;
+        display: none;
+        border:solid 3px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        width: 800px;       }
+
+        .op3{
+        display: flex;
+        display: none;
+        border:solid 3px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        width: 800px;       }
+
+        
+        .op4{
+        display: flex;
+        display: none;
+        border:solid 3px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        width: 800px;       }
+
+        
+
+    .livro{
+        background-color: wheat;
+        display: flex;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .infor{
+       border: 3px solid wheat;
+       background-color: wheat;
+       margin-top: 80px;
+       display: flex;
+       
+       text-align: center;
+
+    }
+    .cont{
+        color: white;
+        border: solid 3px coral;
+        border-radius: 20px;
+        background-color: coral;
+
+    }
+
+    .autor{
+        color: white;
+        border: solid 3px coral;
+        border-radius: 20px;
+        background-color: coral;
+
+    }
+
+    .mvl{
+        color: white;
+        border: solid 3px coral;
+        border-radius: 20px;
+        background-color: coral;
+
+    }
+
+    .atualidade{
+        color: white;
+        border: solid 3px coral;
+        border-radius: 20px;
+        background-color: coral;
+
+    }
+
+    .autor{
+        display: flex;
+        
+    }
+    
+    .container{
+        border: solid 3px;
+        background-color: wheat;
+        width: 900px;
+    }
+
+    .img4, .img5, .img6{
+        display: none;
+    }
+    
+    .img7, .img8, .img9{
+        display: none;
+    }
+    </style>
+    
+    </head>
+
+<body>
+    
+    
+    
+    <script>
+    
+    function cont(){
+    document.querySelector(".op1").style.display =  "block";
+    document.querySelector(".op2").style.display =  "none";
+    document.querySelector(".op3").style.display = "none";
+    document.querySelector(".op4").style.display = "none";
+    document.querySelector(".img1").style.display = "block";
+    document.querySelector(".img2").style.display = "block";
+    document.querySelector(".img3").style.display = "block";
+    document.querySelector(".img4").style.display = "none";
+    document.querySelector(".img5").style.display = "none";
+    document.querySelector(".img6").style.display = "none";
+    document.querySelector(".img7").style.display = "none";
+    document.querySelector(".img8").style.display = "none";
+    }
+
+    function autor(){
+    document.querySelector(".op1").style.display =  "none";
+    document.querySelector(".op2").style.display =  "block";
+    document.querySelector(".op3").style.display = "none";
+    document.querySelector(".op4").style.display = "none";
+    document.querySelector(".img1").style.display = "none";
+    document.querySelector(".img2").style.display = "none";
+    document.querySelector(".img3").style.display = "none";
+    document.querySelector(".img4").style.display = "block";
+    document.querySelector(".img5").style.display = "block";
+    document.querySelector(".img6").style.display = "block";
+    document.querySelector(".img7").style.display = "none";
+    document.querySelector(".img8").style.display = "none";
+
+    }
+
+    function mvl(){
+    document.querySelector(".op1").style.display =  "none";
+    document.querySelector(".op2").style.display =  "none";
+    document.querySelector(".op3").style.display = "block";
+    document.querySelector(".op4").style.display = "none";
+    document.querySelector(".img1").style.display = "block";
+    document.querySelector(".img2").style.display = "none";
+    document.querySelector(".img3").style.display = "none";
+    document.querySelector(".img4").style.display = "none";
+    document.querySelector(".img5").style.display = "none";
+    document.querySelector(".img6").style.display = "none";
+    document.querySelector(".img7").style.display = "block";
+    document.querySelector(".img8").style.display = "block";
+
+    }
+        
+      function atualidade(){
+    document.querySelector(".op1").style.display =  "none";
+    document.querySelector(".op2").style.display =  "none";
+    document.querySelector(".op3").style.display = "none";
+    document.querySelector(".op4").style.display = "block";
+     document.querySelector(".img1").style.display = "none";
+    document.querySelector(".img2").style.display = "none";
+    document.querySelector(".img3").style.display = "block";
+    document.querySelector(".img4").style.display = "block";
+    document.querySelector(".img5").style.display = "none";
+    document.querySelector(".img6").style.display = "none";
+    document.querySelector(".img7").style.display = "block";
+    document.querySelector(".img8").style.display = "none";
+
+      }     
+        
+    
+    </script>
+    
+    
+    
+  <div class="container">
+
+ <h1 style="text-align: center">Tenda dos Milagres</h1>
+<div class="livro">
+ <img src="livro.jpg" width="220px" class="img1">
+ <img src="livro2.jpg" width="220px" class="img2">
+ <img src="imagem3.jpg" width="220px" class="img3">
+ <img src="autor.jpg" width="200px" class="img4">
+ <img src="autor2.jpg" width="200px" class="img5">
+ <img src="autor3.jpg" width="200px" class="img6">
+ <img src="livro3.jpg" width="200px" class="img7">
+ <img src="livro4.jpg" width="200px" class="img8">
+
+    </div>
+    
+
+    <h4 class="op1" style="color: black;">Contexlização Tenda dos Milagres é um livro do autor brasileiro Jorge Amado publicado em 1969.
+        A obra conta a história de Pedro Archanjo, um escritor baiano que valoriza a miscigenação e combate o preconceito racial . 
+        A narrativa de Tenda dos Milagres se dá em dois tempos, entrelaçados ao longo da história. O tempo presente, 
+        aquele em que o autor escreveu o romance, idos de 1969, relata a chegada de um estrangeiro ao Brasil, cujo propósito era conhecer a terra de Pedro Archanjo .
+       </h4>
+       <h4 class="op2" style="color: black;">Jorge Amado (1912-2001) foi um escritor brasileiro nascido na cidade baiana de Itabuna. Ele fez faculdade de Direito no Rio de Janeiro, mas não exerceu a profissão de advogado.
+         Durante alguns anos, viveu no exterior por questões políticas. Ele é um dos maiores representantes da ficção regionalista que marcou o Segundo Tempo Modernista. Sua obra é baseada na exposição e análise realista dos cenários rurais e urbanos da Bahia.
+       </h4>
+       <h4 class="op3" style="color: black;">Jorge Amado faz parte da Geração de 30 do Modernismo brasileiro. Assim, o romance em questão apresenta realismo social e crítica sociopolítica .</h4>
+       <h4 class="op4" style="color: black;">A obra traz reflexões sobre questões sociais e políticas do século XX e denuncia o preconceito racial e as injustiças sociais, além de enaltecer a liberdade de expressão .</h4>
+<div class="infor">
+<a href="#" class="cont" onclick="cont()">Ver contextualização</a>
+<a href="#" class="autor" onclick="autor()">Biografia</a>
+<a href="#" class="mvl" onclick="mvl()">Ver movimento literario</a>
+<a href="#" class="atualidade" onclick="atualidade()">Ver atualidade</a>
+</div>
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
